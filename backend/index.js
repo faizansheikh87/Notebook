@@ -4,7 +4,7 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 
 
-const PORT = 3001;
+const PORT = Process.env.PORT || 3001;
 const app = express();
 const Sceret_Key = "FaizanIsGreat"
 
