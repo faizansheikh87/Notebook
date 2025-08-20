@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 
 const PORT = Process.env.PORT || 3001;
 const app = express();
-const Sceret_Key = "FaizanIsGreat"
+
 
 // Middleware to parse JSON body
 app.use(express.json());
@@ -127,7 +127,7 @@ app.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Incorrect password" });
     }
      
-    const token = jwt.sign({id:user._id},Sceret_Key,{expiresIn:'1h'});
+    const token = jwt.sign({id:user._id},Process.env.JWT_SECRET,{expiresIn:'1h'});
     res.status(200).json({token:token,email:user.email});
   } catch (err) {
     console.log("Login error:", err);
