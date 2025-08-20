@@ -20,7 +20,7 @@ const Create = () => {
     };
 
     try {
-      const res = await axios.post('http://localhost:3001/add', data);
+      const res = await axios.post(https://notebook-n5eo.onrender.com/add, data);
       console.log('Server response:', res.data);
       alert('Form submitted successfully');
 
