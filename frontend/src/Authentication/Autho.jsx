@@ -39,7 +39,7 @@ function Autho({ onClose }) {
       }
 
       try {
-        const res = await axios.post('http://localhost:3001/register', send_data);
+        const res = await axios.post('https://notebook-n5eo.onrender.com/register', send_data);
         if (res.status === 200) {
           alert(res.data.message || "Sign up successful!");
           semail.current.value = '';
@@ -55,7 +55,7 @@ function Autho({ onClose }) {
     } else {
       // Login mode
       try {
-        const res = await axios.post('http://localhost:3001/login', send_data);
+        const res = await axios.post('https://notebook-n5eo.onrender.com/login', send_data);
         if (res.status === 200) {
           const {token,email} = res.data;
           localStorage.setItem("token",token);
