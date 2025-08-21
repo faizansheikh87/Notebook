@@ -16,7 +16,7 @@ const Navbar = () => {
       return;
     }
 
-    axios.get('http://localhost:3001/Profile', {
+    axios.get('https://notebook-backend-3dhu.onrender.com/Profile', {
       headers: {
         Authorization: `Bearer ${token}`
       }
