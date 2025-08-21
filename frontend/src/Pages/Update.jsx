@@ -19,7 +19,7 @@ const Update = () => {
     };
 
     // ✅ Try/catch is good, but no need if using promise `.then().catch()`
-    axios.put(`https://notebook-n5eo.onrender.com/update/${id}`, data)
+    axios.put(`https://notebook-backend-3dhu.onrender.com/update/${id}`, data)
       .then(() => {
         alert('Update has been successfully completed, please wait for a while');
         setTimeout(() => {
