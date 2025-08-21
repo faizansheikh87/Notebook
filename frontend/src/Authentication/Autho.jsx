@@ -39,7 +39,7 @@ function Autho({ onClose }) {
       }
 
       try {
-        const res = await axios.post('https://notebook-n5eo.onrender.com/register', send_data);
+        const res = await axios.post('https://notebook-backend-3dhu.onrender.com/register', send_data);
         if (res.status === 200) {
           alert(res.data.message || "Sign up successful!");
           semail.current.value = '';
