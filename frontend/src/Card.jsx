@@ -11,7 +11,7 @@ function Card({userInfo}) {
     const addinfo = userInfo.number;
     const forFront = addinfo.slice(0,50);
     function handledelete(id) {
-        axios.delete(`http://localhost:3001/delete/${id}`)
+        axios.delete(`https://notebook-backend-3dhu.onrender.com/delete/${id}`)
             .then(() => console.log('happy happy.'))
             .catch((err) => console.log(`faizansheikh ${err}`) )
     };
