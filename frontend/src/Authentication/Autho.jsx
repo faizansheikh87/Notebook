@@ -55,7 +55,7 @@ function Autho({ onClose }) {
     } else {
       // Login mode
       try {
-        const res = await axios.post('https://notebook-n5eo.onrender.com/login', send_data);
+        const res = await axios.post('https://notebook-backend-3dhu.onrender.com/login', send_data);
         if (res.status === 200) {
           const {token,email} = res.data;
           localStorage.setItem("token",token);
