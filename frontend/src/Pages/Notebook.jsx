@@ -7,7 +7,7 @@ const Notebook = () => {
 
     useEffect(() => {
     axios
-      .get('https://notebook-n5eo.onrender.com/get')
+      .get('https://notebook-backend-3dhu.onrender.com/get')
       .then((res) => setData(res.data))
       .catch((err) =>
         console.log(`Error occurred while getting the result: ${err}`)
