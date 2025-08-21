@@ -20,7 +20,7 @@ const Create = () => {
     };
 
     try {
-      const res = await axios.post(https://notebook-backend-3dhu.onrender.com/add, data);
+      const res = await axios.post("https://notebook-backend-3dhu.onrender.com/add", data);
       console.log('Server response:', res.data);
       alert('Form submitted successfully');
 
